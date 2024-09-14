@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Cookie</title>
+</head>
+<body>
+    <h2>@ViewBag.Message</h2>
+    @if (ViewBag.Username != null)
+    {
+        <p>Username: @ViewBag.Username</p>
+        <p>User Type: @ViewBag.UserType</p>
+    }
+    <a href="@Url.Action("DeleteCookie", "Home")">Delete Cookie</a>
+</body>
+</html>
